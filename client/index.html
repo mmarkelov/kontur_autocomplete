@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-4 col-xs-5 col-xs-offset-4">
+            <h1>Autocomplete by mmarkelov</h1>
+            <div class="input-group">
+                <input class="form-control" aria-describedby="basic-addon2" type="text" placeholder="Введите или выберете из списка" id="search">
+                <span class="input-group-addon" id="basic-addon2"><i class="fa fa-caret-down"></i></span>
+            </div>
+            <div id="autocomplete">
+                <div class="add-value"></div>
+                <ul id="result">
+                </ul>
+            </div>
+            <div class="warning">
+                Значения нет в справочнике. Возможно, вы ошиблись в написании
+            </div>
+            <div class="error">
+                Добавьте значение в справочник или выберете другое значение из списка
+            </div>
+            <div class="info"></div>
+        </div>
+    </div>
+    <script src="jquery-3.1.1.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
